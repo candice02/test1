@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<!--
+  _                    _ 
+ | |__   ___  __ _  __| |
+ | '_ \ / _ \/ _` |/ _` |
+ | | | |  __/ (_| | (_| |
+ |_| |_|\___|\__,_|\__,_|
+
+-->
+
+
+<head>
+	<title>Découverte de l'enregistrement</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">	
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+
+</head>
+
+
+<!--
+  _             _      
+ | |__  ___  __| |_  _ 
+ | '_ \/ _ \/ _` | || |
+ |_.__/\___/\__,_|\_, |
+                  |__/
+-->
+
+<body id="page2">
+	<!--MENU-->
+	<ul>
+		<a href="#presentation" id="menu1">
+			<li>chronologie</li>
+		</a>
+
+		<a href="#jouer" id="menu2">
+			<li>jeux</li>
+		</a>
+	</ul>
+
+
+<!--
+                   _   _        _ 
+  _ __   __ _ _ __| |_(_) ___  / |
+ | '_ \ / _` | '__| __| |/ _ \ | |
+ | |_) | (_| | |  | |_| |  __/ | |
+ | .__/ \__,_|_|   \__|_|\___| |_|
+ |_|
+-->
+
+
+
+	<section id="presentation">
+		<article>
+			<h1>Découvre l’histoire de l’enregistrement</h1>
+			<h2>Je t’invite à cliquer sur les illustrations et de mettre le son à fond !</h2>
+			<h3>Présentation</h3>
+			<p>Connais-tu Vannevar Bush? C’ est un ingénieur américain, conseiller scientifique et chercheur. Il est surtout connu comme étant l'un des pionniers d'Internet, à travers notamment son article " As We May Think " (1945) dans lequel l'idée novatrice de Bush est d'automatiser la mémoire humaine étant évidemment importante à l'ère du développement numérique.
+	   		</p>
+		</article>	
+		
+		<img src="import/note7.png"id="note7">	
+		<img src="import/note8.png"id="note8">
+		<img src="import/note9.png"id="note9">	
+
+		<aside>
+			<figure>
+				<img onclick="play()" src="import/vannevar.png">
+				<audio id="audio" src="import/son1.mp3"></audio>
+	    		<figcaption>clique ici (Vannevar) </figcaption>
+	    	</figure>
+	    </aside>
+
+
+
+	    <div class="fleche">
+	    	<a href="#avantgarde" class="scrollTo" ><img src="import/fleche.png"></a>
+	    </div>
+    </section>
+			
+<!--	
+                 _   _       ___ 
+  _ __  __ _ _ _| |_(_)___  |_  )
+ | '_ \/ _` | '_|  _| / -_)  / / 
+ | .__/\__,_|_|  \__|_\___| /___|
+ |_|
+-->
+
+	<section id="avantgarde">
+		<article>
+			<h3>Un avant-gardiste</h3>
+			<p>Cette ingénieur américain est un avant-gardiste, il va se poser la question de si l’auteur du futur parlera directement à un appareil d’enregistrement alors que nous sommes seulement en 1945. Son idée est de faire plus que la mémoire peut stocker chez un homme et c’est incroyable !
+		    </p>
+		</article>
+
+		<img src="import/note1.png"id="note10">	
+		<img src="import/note10.png"id="note11">
+		<img src="import/note13.png"id="note12">
+
+		<aside>
+			<figure>
+	    		<img onclick="play2()" src="import/idee.png">
+				<audio id="audio2" src="import/son2.mp3"></audio>
+	    		<figcaption>idée de  Bush</figcaption>
+	    	</figure>
+	    </aside>
+
+	    <div class="fleche">
+	   		<a href="#machines" class="scrollTo" ><img src="import/fleche.png"></a>
+	    </div>	
+
+	</section>
+<!--
+	                 _       ----
+  _ __  __ _ _ _| |_(_)___  |__ /
+ | '_ \/ _` | '_|  _| / -_)  |_ \
+ | .__/\__,_|_|  \__|_\___| |___/
+ |_|
+
+-->
+
+	<section id="machines">
+		<article>
+			<h3>Machines de l’époque</h3>
+			<p>À cette époque, on retrouver seulement le sténographe ( utilisé pour retranscrire les débats parlementaires) et le phonographe ( reproduire du son   comme des paroles ou des musiques musiques par un procédé purement mécanique). Ainsi, le but était de retranscrire aussi vite que la parole mais ce n’était pas directement un enregistrement dactylographié.
+		    </p>
+		</article>
+
+		<img src="import/note3.png"id="note13">	
+		<img src="import/note7.png"id="note14">
+		<img src="import/note12.png"id="note15">
+
+		<aside>
+			<figure>
+				<img onclick="play3()"src="import/stenographe.png" id="steno">
+				<audio id="audio3" src="import/son3.mp3"></audio>
+				<figcaption id="legendesteno">Sténographe</figcaption>
+		    	 <img onclick="play4()" src="import/phonographe.png" id="phono">
+				<audio id="audio4" src="import/son4.mp3"></audio>
+	    		<figcaption id="legendephono">Phonographe</figcaption>
+	    	</figure>
+	    </aside>
+
+	    <div class="fleche">
+	    	<a href="#vocoder" class="scrollTo" ><img src="import/fleche.png"></a>
+	    </div>
+
+	</section>
+
+<!--
+	                 _   _   _ _  
+  _ __  __ _ _ _| |_(_)___  | | | 
+ | '_ \/ _` | '_|  _| / -_) |_  _|
+ | .__/\__,_|_|  \__|_\___|   |_| 
+ |_|
+
+-->
+
+
+	<section id="vocoder">
+		<article>
+			<h3>Le vocodeur</h3>
+			<p>Il a été inventé en 1939 un ingénieur du laboratoire Bell, afin d'assurer une transmission de la voix sur le réseau téléphonique.Il est présenté à l'exposition universelle de New York la même année. Celui-ci  donnait à la voix une texture plutôt robotique mais a été utilisé par l'armée américaine dans le premier système de communication numérique. Il est par la suite utilisé comme base pour des écrits et est adopté comme instrument et reprit grâce à certaines compositions de Madonna, Daft Punk, Cascada...L’arrivé du numérique va permettre à l’enregistrement d’évoluer rapidement et l’on va retrouver au début du 21ème siècle, le baladeur MP3 qui permet une grande liberté d’écouter, de dupliquer et de partager tes musiques. Les nouveaux modèles permettent aussi le stockage et la lecture de vidéos et multiplient les fonctionnalités tel que l’avait prédit Vannevar Bush.
+			</p>
+		</article>
+
+		<img src="import/note5.png"id="note16">	
+		<img src="import/note11.png"id="note17">
+		<img src="import/note14.png"id="note18">
+
+		<aside>
+			<figure>
+	    		<img onclick="play5()" src="import/vocodeur.png">
+				<audio id="audio5" src="import/son5.mp3"></audio>
+	    		<figcaption>Vocodeur</figcaption>
+	    	</figure>
+	    </aside>
+
+	    <div class="fleche">
+	    	<a href="#aujourdhui" class="scrollTo" ><img src="import/fleche.png"></a>
+	    </div>
+		
+	</section>
+
+	<!--
+                 _   _       ___ 
+  _ __  __ _ _ _| |_(_)___  | __|
+ | '_ \/ _` | '_|  _| / -_) |__ \
+ | .__/\__,_|_|  \__|_\___| |___/
+ |_|
+-->
+
+	<section id="aujourdhui">
+		<article>
+			<h3>Aujourd’hui</h3>
+			<p>«Parler à un microphone(…) en connexion avec une machine à écrire contrôlé vocalement » Vannevar Bush va alors révolutionner l’enregistrement dactylographié. Aujourd’hui, la notion d’enregistrement est un domaine à forte croissance grâce à la déferlante des systèmes embarqués. Le but de l’enregistrement est de stocker nos informations afin de les conserver. Par exemple dans le domaine du design, on retrouve le projet #44 par studio inFlexions qui permet de modéliser ton vase selon le timbre de ta voix. Nous sommes tous entouré par des enregistrements tel que l’assistant vocal Siri, Google Chrome ou pour envoyer des notes vocales sur des réseaux sociaux comme Instagram, WhatsApp, Messenger ou bien  voir des véhicules connectés qui ont la capacité d’enregistrer des informations sur le comportement routier, la fréquence de conduite etc…
+			 </p>
+		</article>
+
+			<img src="import/note10.png"id="note19">	
+			<img src="import/note11.png"id="note20">
+			<img src="import/note14.png"id="note21">
+
+		<aside>
+			<figure>
+				<img onclick="play6()" src="import/assistant.png">
+				<audio id="audio6" src="import/son6.mp3"></audio>
+	    		<figcaption>Assistant vocal</figcaption>
+	    	</figure>
+	    </aside>
+
+	     <div class="fleche">
+	    	<a href="#jouer" class="scrollTo" ><img src="import/fleche.png"></a>
+	    </div>
+
+	    </section>
+
+<!--
+                 _   _        __ 
+  _ __  __ _ _ _| |_(_)___   / / 
+ | '_ \/ _` | '_|  _| / -_) / _ \
+ | .__/\__,_|_|  \__|_\___| \___/
+ |_|
+
+-->
+
+	<section id="jouer">
+		<article>
+			<h3 id="couleur">À toi de jouer !</h3>
+			<p>Amuse toi avec des expériences basée sur l’enregistrement, tu vas même pouvoir le partager à tes amis et pourquoi pas devenir un pro de la musique.
+	  		</p>
+		</article>
+
+			<img src="import/note10.png"id="note22">	
+			<img src="import/note15.png"id="note23">
+			<img src="import/note13.png"id="note24">
+			<img src="import/note9.png"id="note25">
+			<img src="import/note12.png"id="note26">
+
+<!--
+
+                                         _ 
+   ___ __ _ _ __ ___  _   _ ___ ___  ___| |
+  / __/ _` | '__/ _ \| | | / __/ __|/ _ \ |
+ | (_| (_| | | | (_) | |_| \__ \__ \  __/ |
+  \___\__,_|_|  \___/ \__,_|___/___/\___|_|
+
+
+-->
+
+
+
+	<div class="container"> 
+	 	<div class="carousel"> 
+		    <input type="radio" id="carousel-1" name="carousel[]" checked> 
+		    <input type="radio" id="carousel-2" name="carousel[]">
+
+		    <ul class="carousel__items">
+			      <li class="carousel__item">
+			      		<a href="https://musiclab.chromeexperiments.com/Voice-Spinner/" title="Ceci est un lien image HTML 2">
+			      		<img src="import/voix.png" />
+			      		</a>
+			      </li>
+
+			      <li class="carousel__item">
+			      		<a href="https://musiclab.chromeexperiments.com/Sound-Waves/" title="Ceci est un lien image HTML">
+			      		<img src="import/piano.png"/>
+			      		</a>
+			      </li>
+
+		    </ul>
+
+
+
+
+		    <div class="carousel__prev">
+		      <label for="carousel-1"> </label>
+		      <label for="carousel-2"></label>
+		    </div>
+
+
+		    <div class="carousel__next">
+		      <label for="carousel-1"></label>
+		      <label for="carousel-2"></label>
+		    </div>
+
+  
+
+		</div>
+	</div>
+
+	<div class="fleche2">
+	   <a href="index.html" class="scrollTo" >
+	   	<img src="import/fleche2.png">
+	   </a>
+	</div>	
+
+
+</section>
+
+
+	<!--RETOUR À L'ACCUEIL-->
+	
+	
+<!--
+               _       _   
+              (_)     | |  
+ ___  ___ _ __ _ _ __ | |_ 
+/ __|/ __| '__| | '_ \| __|
+\__ \ (__| |  | | |_) | |_ 
+|___/\___|_|  |_| .__/ \__|
+                | |        
+                |_|
+	
+-->
+	
+
+
+<script>
+$(document).ready(function() {
+$('.scrollTo').on('click', function() { // Au clic sur un élément
+var page = $(this).attr('href'); // Page cible
+var speed = 750; // Durée de l'animation (en ms)
+$('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+return false;
+});
+});
+</script>
+
+
+
+<script type="text/javascript">
+	let play = function(){document.getElementById("audio").play()}
+
+	let play2 = function(){document.getElementById("audio2").play()}
+
+	let play3 = function(){document.getElementById("audio3").play()}
+
+	let play4 = function(){document.getElementById("audio4").play()}
+
+	let play5 = function(){document.getElementById("audio5").play()}
+
+	let play6 = function(){document.getElementById("audio6").play()}
+</script>
+
+
+</body>
+</html>
